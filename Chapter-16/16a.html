@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 16a</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            padding: 15px;
+        }
+
+        .header-button {
+            position: relative;
+
+            border: none;
+            background: white;
+
+            font-size: 16px;
+
+            cursor: pointer;
+        }
+
+        .tooltip {
+            position: absolute;
+
+            top: 40px;
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            background-color: gray;
+            color: white;
+
+            padding: 6px 10px;
+
+            font-size: 12px;
+
+            white-space: nowrap;
+
+            opacity: 0;
+            pointer-events: none;
+
+            transition: opacity 0.3s;
+        }
+
+        .header-button:hover .tooltip {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+
+        <button class="header-button">
+            Home
+            <span class="tooltip">Home</span>
+        </button>
+
+        <button class="header-button">
+            Search
+            <span class="tooltip">Search</span>
+        </button>
+
+        <button class="header-button">
+            Subscribe
+            <span class="tooltip">Subscribe</span>
+        </button>
+
+    </div>
+
+</body>
+</html>
