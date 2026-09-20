@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 16c</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .video {
+            width: 300px;
+        }
+
+        .thumbnail {
+            width: 300px;
+            display: block;
+        }
+
+        .channel-picture {
+            width: 40px;
+            height: 40px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="video">
+
+        <!-- Thumbnail as link -->
+        <a
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            target="_blank"
+        >
+            <img
+                class="thumbnail"
+                src="thumbnail.jpg"
+                alt="Video Thumbnail"
+            >
+        </a>
+
+        <br>
+
+        <!-- Channel picture as link -->
+        <a
+            href="https://www.youtube.com/"
+            target="_blank"
+        >
+            <img
+                class="channel-picture"
+                src="channel.jpg"
+                alt="Channel"
+            >
+        </a>
+
+    </div>
+
+</body>
+</html>
