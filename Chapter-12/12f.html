@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>12f Flexbox</title>
+
+    <style>
+        .navbar {
+            height: 75px;
+            background-color: #7650b5;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            gap: 30px;
+        }
+
+        .home {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .search {
+            flex: 1;
+            height: 40px;
+            border: none;
+            border-radius: 25px;
+            padding: 0 25px;
+            font-size: 16px;
+        }
+
+        .download {
+            color: white;
+            background-color: #7650b5;
+            border: 1px solid white;
+            padding: 10px 25px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <div class="home">Home</div>
+
+        <input class="search" type="text" placeholder="Search">
+
+        <button class="download">Download</button>
+
+    </div>
+
+</body>
+</html>
