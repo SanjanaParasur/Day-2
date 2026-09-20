@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>13c Gmail Layout</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .email {
+            width: 550px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            display: flex;
+        }
+
+        /* Horizontal layout */
+        .left {
+            width: 60px;
+        }
+
+        .profile {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: lightgreen;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 25px;
+        }
+
+        /* Vertical layout */
+        .right {
+            flex: 1;
+            display: block;
+        }
+
+        /* Horizontal layout */
+        .top {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .name {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .time {
+            color: gray;
+        }
+
+        .subject {
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .message {
+            color: gray;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="email">
+
+        <!-- Profile image -->
+        <div class="left">
+            <div class="profile">
+                🐱
+            </div>
+        </div>
+
+        <!-- Email information -->
+        <div class="right">
+
+            <!-- Sender and time - horizontal -->
+            <div class="top">
+                <div class="name">
+                    Chewy Promotions
+                </div>
+
+                <div class="time">
+                    4:58 PM
+                </div>
+            </div>
+
+            <!-- Subject - vertical -->
+            <div class="subject">
+                Biggest sales of the year!
+            </div>
+
+            <!-- Message - vertical -->
+            <div class="message">
+                Hey there! We're writing to tell you about our...
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
