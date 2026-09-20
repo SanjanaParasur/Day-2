@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>14d Modal</title>
+
+    <style>
+        body {
+            height: 3000px;
+            margin: 0;
+        }
+
+        .sidebar {
+            position: fixed;
+
+            right: 0;
+            top: 0;
+
+            width: 100px;
+            height: 100vh;
+
+            background-color: green;
+            color: white;
+        }
+
+        .overlay {
+            position: fixed;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            background-color: rgba(0, 0, 0, 0.8);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal {
+            width: 450px;
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        .modal h1 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        right sidebar
+    </div>
+
+    <div class="overlay">
+
+        <div class="modal">
+
+            <h1>Modal Title</h1>
+
+            <p>This is a modal</p>
+
+            <button>Close</button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
