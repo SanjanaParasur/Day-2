@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>13b Nested Flexbox</title>
+
+    <style>
+        .container {
+            display: flex;
+            width: 700px;
+            height: 120px;
+        }
+
+        .left {
+            width: 200px;
+            background-color: lightpink;
+        }
+
+        .right {
+            width: 500px;
+            background-color: lightblue;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .text {
+            background-color: black;
+            color: white;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="left"></div>
+
+        <div class="right">
+
+            <div class="row">
+                <span>row1</span>
+            </div>
+
+            <div class="row">
+                <span class="text">row2</span>
+                <span class="text">row2</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
