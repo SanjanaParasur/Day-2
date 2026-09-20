@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 16d</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 30px;
+        }
+
+        .video {
+            display: inline-block;
+            width: 400px;
+            margin: 20px;
+        }
+
+        .thumbnail {
+            width: 400px;
+            display: block;
+        }
+
+        .video-info {
+            display: flex;
+            align-items: center;
+
+            margin-top: 10px;
+        }
+
+        /* Relative container */
+        .channel-container {
+            position: relative;
+
+            display: inline-block;
+        }
+
+        .channel-picture {
+            width: 45px;
+            height: 45px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+
+            cursor: pointer;
+        }
+
+        /* Tooltip */
+        .channel-tooltip {
+            position: absolute;
+
+            top: 55px;
+            left: 0;
+
+            width: 230px;
+
+            background-color: white;
+
+            padding: 15px;
+
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            border-radius: 5px;
+
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+
+            opacity: 0;
+            pointer-events: none;
+
+            transition: opacity 0.3s;
+        }
+
+        /* Show tooltip */
+        .channel-container:hover .channel-tooltip {
+            opacity: 1;
+        }
+
+        .tooltip-picture {
+            width: 50px;
+            height: 50px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+        }
+
+        .channel-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .subscribers {
+            color: gray;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="video">
+
+        <img
+            class="thumbnail"
+            src="thumbnail.jpg"
+            alt="Video"
+        >
+
+        <div class="video-info">
+
+            <!-- Relative element -->
+            <div class="channel-container">
+
+                <img
+                    class="channel-picture"
+                    src="channel.jpg"
+                    alt="Channel"
+                >
+
+                <!-- Tooltip -->
+                <div class="channel-tooltip">
+
+                    <img
+                        class="tooltip-picture"
+                        src="channel.jpg"
+                        alt="Channel"
+                    >
+
+                    <div>
+                        <div class="channel-name">
+                            Marques Brownlee
+                        </div>
+
+                        <div class="subscribers">
+                            3.4M subscribers
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div style="margin-left: 12px;">
+                Talking Tech and AI with Google CEO Sundar Pichai
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
