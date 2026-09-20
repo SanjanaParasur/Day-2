@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>14e Facebook Header</title>
+
+    <style>
+        body {
+            height: 3000px;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            position: fixed;
+
+            top: 0;
+            left: 0;
+            right: 0;
+
+            height: 70px;
+
+            background-color: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0 50px;
+
+            box-shadow: 0 1px 5px #ccc;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-image {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+
+            background-color: lightgreen;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin-right: 10px;
+            font-size: 24px;
+        }
+
+        .name {
+            font-weight: bold;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .add {
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+        }
+
+        .message {
+            border: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div class="profile">
+
+            <div class="profile-image">🐱</div>
+
+            <div class="name">
+                Oliver Cat
+            </div>
+
+        </div>
+
+        <div class="buttons">
+
+            <button class="add">
+                Add Friend
+            </button>
+
+            <button class="message">
+                Message
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
