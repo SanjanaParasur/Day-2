@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>12g Flexbox</title>
+
+    <style>
+        .container {
+            width: 550px;
+        }
+
+        .person {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .person img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .info {
+            flex: 1;
+        }
+
+        .name {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .description {
+            font-size: 20px;
+            color: gray;
+            margin-top: 3px;
+        }
+
+        .popular {
+            font-size: 18px;
+            color: gray;
+            margin-top: 3px;
+        }
+
+        .follow {
+            background-color: #168de2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 18px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="person">
+            <img src="cat1.jpg">
+
+            <div class="info">
+                <div class="name">oliver</div>
+                <div class="description">the cat</div>
+                <div class="popular">Popular</div>
+            </div>
+
+            <button class="follow">Follow</button>
+        </div>
+
+
+        <div class="person">
+            <img src="cat2.jpg">
+
+            <div class="info">
+                <div class="name">Mimi</div>
+                <div class="description">Sleepy Cat</div>
+                <div class="popular">Popular</div>
+            </div>
+
+            <button class="follow">Follow</button>
+        </div>
+
+
+        <div class="person">
+            <img src="dog.jpg">
+
+            <div class="info">
+                <div class="name">Rex</div>
+                <div class="description">Happy Bulldog</div>
+                <div class="popular">Popular</div>
+            </div>
+
+            <button class="follow">Follow</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
